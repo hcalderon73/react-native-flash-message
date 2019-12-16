@@ -192,7 +192,7 @@ export const DefaultFlash = ({
   const hasIcon = !!iconView;
 
   return (
-    <FlashMessageWrapper position={typeof position === "string" ? position : null}>
+    <FlashMessageWrapper position={typeof position === "string" ? position : null} idTest="toastMessage">
       {wrapperInset => (
         <View
           style={styleWithInset(
