@@ -571,7 +571,7 @@ export default class FlashMessage extends Component {
           animStyle,
         ]}>
         {!!message && (
-          <TouchableWithoutFeedback onPress={this.pressMessage} onLongPress={this.longPressMessage}>
+          <TouchableWithoutFeedback onPress={this.pressMessage} onLongPress={this.longPressMessage} testID="toast">
             <MessageComponent
               position={position}
               floating={floating}
